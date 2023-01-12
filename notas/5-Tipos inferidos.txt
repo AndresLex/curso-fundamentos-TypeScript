@@ -1,0 +1,15 @@
+Tipos inferidos
+
+TypeScript puede inferir el tipo de dato de una variable a pesar de no haberlo declarado explícitamente.
+
+Inferencia de tipos
+A partir de la inicialización de la variable TypeScript infiere el tipo que será a lo largo del código y este no puede variar. Por ejemplo:
+
+let myName = "Victoria";
+Si bien no indicamos el tipo de dato como se haría de esta manera:
+
+let myName: string = "Victoria";
+TypeScript infiere que la variable myName será del tipo string y en adelante no podrá tomar un valor que no sea de este tipo de dato.
+
+myName = 30;
+//Nos señalará como error pues se le quiere asignar un número a una variable de tipo string.

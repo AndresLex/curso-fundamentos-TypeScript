@@ -1,0 +1,8 @@
+Atrapando bugs
+
+El análisis de código estático nos ayudará a detectar fallas en nuestro programa durante su desarrollo.
+
+Activando poderes de TypeScript en JavaScript 🧐
+Si estás en Visual Studio Code, puedes activar el analizador de código estático de TypeScript sobre un archivo JavaScript. Para esto, en la primera línea del archivo debe ir lo siguiente:
+
+//@ts-check

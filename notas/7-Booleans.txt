@@ -1,0 +1,8 @@
+booleans
+
+Este tipo de dato puede tomar dos valores: true o false.
+
+let isEnable: boolean = true;
+let isNew = false;
+
+: boolean no es lo mismo que : Boolean. Recuerda escribirlo en minúscula

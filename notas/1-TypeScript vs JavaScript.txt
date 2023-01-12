@@ -1,0 +1,23 @@
+TypeScript vs JavaScript
+
+En resumen, con JavaScript nosotros nos damos cuenta de un error cuando se ejecuta cierto código en la App, mientras que con TypeScript, nos damos cuenta de los errores mientras estamos en el editor de texto o cuando compilamos el código, dándonos cuenta de los errores mas rápidamente y por lo tanto, mejorando la experiencia de desarrollo.
+
+
+Panorama
+JavaScript ha sufrido un incremento exponencial en su uso, pues se puede usar en Frontend, Backend, IoT, entre otros. No obstante, este no fue creado como un lenguaje maduro desde el inicio, fue con el tiempo que ha ido mejorando hasta lo que es hoy en día.
+
+En JavaScript solo te das cuenta de que tienes un error hasta el momento en que lo ejecutas, sea en el navegador o en un entorno de ejecución como NodeJS, más no antes. Lo que queremos como desarrolladores es obtener retroalimentación lo antes posible para tener la menor cantidad de errores en producción
+
+El aporte de TypeScript
+TypeScript abarca todo lo que tiene JavaScript, más las nuevas versiones de ECMAScript, y añade análisis estático a nuestro código.
+¿Qué engloba Typescript?
+
+¿Qué significa análisis de código estático?
+Entre más rápido encuentres un error, más fácil será solucionarlo
+
+En el libro Software Engineering at Google[1] señalan ciertas capas para detectar fallas en el desarrollo de programas:
+
+Análisis de código estático: corre en el editor de código en busca de un typo (error en la escritura de un término), llamadas incorrectas a funciones y brinda autocompletado de código
+Pruebas Unitarias (Unit Tests): se realiza pruebas para verificar si una parte del código hace lo que queremos que ejecute
+Pruebas de Integración (Integration Tests): vemos como todo el código funciona en conjunto y que se ejecute cómo deseamos
+Revisión de código (Code Review): se verifica si se ha seguido con las normas, estándares y mejores prácticas establecidas por el equipo

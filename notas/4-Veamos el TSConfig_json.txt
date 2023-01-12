@@ -1,0 +1,25 @@
+el comando
+  > npx tsc --init
+inicializa un archivo tsconfig.ts. En este va estar la configuración como el target, ourDir, strictMode, etc. Evitándonos tener que poner esas flags en cada compilación.
+
+Una vez con ese archivo, solo corremos el comando
+  > npx tsc
+
+podemos evitarnos la compilación continua corriendo el comando:
+  > npx tsc --watch
+
+
+## Proyecto
+Creemos el archivo TSConfig.json en nuestro proyecto
+Activamos las siguientes propiedades dentro de dicho archivo:
+  outDir: "./dist" indicando la carpeta dist como el directorio destino de los archivos transpilados
+
+  rootDir: "./src" indicamos que nuestros archivos TypeScript, los cuales serán “compilados” luego, estarán en la carpeta src
+
+Creamos el archivo 02-demo2.ts dentro de la carpeta src con el siguiente código:
+const numbers = [1,3,4];
+
+Probemos la compilación de nuestros archivos:
+npx tsc
+
+Observaremos que los archivos transpilados se encuentran en nuestra carpeta dist.
