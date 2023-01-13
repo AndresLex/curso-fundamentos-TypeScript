@@ -10,11 +10,20 @@
     "type": "git",
     "url": "git+https://github.com/AndresLex/curso-fundamentos-TypeScript.git"
   },
-  "keywords": ["TypeScript"],
+  "keywords": [
+    "TypeScript"
+  ],
   "author": "Andres Camargo <andrescamargo@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/AndresLex/curso-fundamentos-TypeScript/issues"
   },
-  "homepage": "https://github.com/AndresLex/curso-fundamentos-TypeScript#readme"
+  "homepage": "https://github.com/AndresLex/curso-fundamentos-TypeScript#readme",
+  "dependencies": {
+    "date-fns": "^2.29.3"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.191",
+    "lodash": "^4.17.21"
+  }
 }

@@ -1,0 +1,39 @@
+Null y Undefined
+
+Estos dos funcionan como dos tipos de datos, al igual que, por ejemplo, string o number.
+
+El tipo de datonull es para indicar un valor nulo y undefined para algo indefinido. Son tipos diferentes.
+
+Null y Undefined como tipo Any
+En TypeScript, si no especificamos que va a ser null o undefined, estos son inferidos como tipo any:
+
+//TypeScript
+let myVar = null; //Tipo any
+let otherVar = undefined; //Tipo any
+
+let myNull: null = null; // Tipo null
+let myUndefined: undefined = undefined; //Tipo undefined
+Union Types como emergencia
+Hay casos en la que queremos que una variable sea de tipo string o number y que al inicializarlas sean de tipo null o undefined para luego asignarles un valor del tipo de dato de los primeros mencionados. En este contexto podríamos usar los Union Types:
+
+let myNumber: number | null = null;
+myNumber = 50;
+
+let myString: string | undefined = undefined;
+myString = "Hola TypeScript";
+
+## lo he usado al no tener la certeza si algun objeto tiene una propiedad.
+ > console.log(persona?.ubicacion?.serie);
+
+
+Nullish coalescing operator (??) VS logical OR operator (||)
+La gran diferencia entre estos dos es que el logical OR operator (||) toma como valores falsos a 0, NaN, strings vacíos ("", '', ``), false, a demás de null y undefined, mientras que nullsh coalescing operator tomo como valores falso solamente a null y undefined.
+
+En el caso de las funciones se ejecuta la misma, realizan todos los cálculos que tienen que hacer, pero ambos operadadores ?? y || únicamente se fijan en lo que retorna dichas funciones.
+En el caso del ejemplo del profesor veo más factible utilizar nullish coalescing operator en vez de logical OR operator.
+
+function hiV2 (name: string | null) {
+        ...
+        hello += name?.toLowerCase() ?? 'nobody';
+        ...
+}

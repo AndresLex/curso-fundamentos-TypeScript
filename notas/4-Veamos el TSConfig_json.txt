@@ -16,6 +16,8 @@ Activamos las siguientes propiedades dentro de dicho archivo:
 
   rootDir: "./src" indicamos que nuestros archivos TypeScript, los cuales serán “compilados” luego, estarán en la carpeta src
 
+
+
 Creamos el archivo 02-demo2.ts dentro de la carpeta src con el siguiente código:
 const numbers = [1,3,4];
 
